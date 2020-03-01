@@ -1,0 +1,44 @@
+.custom-alert-container {
+  background: #eee;
+  top: 10%;
+  border-radius: 0.5em;
+  color: var(--font-title-color);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+.custom-alert-title {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background: #ccc;
+  border-radius: 0.5rem;
+}
+
+.custom-alert-content {
+  margin: 0;
+  padding: 1.5rem 1rem;
+}
+
+.custom-alert-container-button {
+  border-radius: 0.5em;
+  background: #ccc;
+  border: none;
+  outline: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  max-width: 6rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.custom-alert-container-button:hover {
+  background: #ddd;
+}

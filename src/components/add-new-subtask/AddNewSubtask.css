@@ -1,0 +1,34 @@
+.add-new-subtask-container {
+    border-bottom: solid 1px var(--font-secondary-color);
+    text-align: start;
+    display: flex;
+}
+
+.add-new-subtask-input {
+    width: 80%;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    color: var(--font-secondary-color);
+    outline: none;
+    font-family: inherit;
+    letter-spacing: inherit;
+    padding: 0.2rem 1rem 0.2rem 0.1rem;
+}
+
+.add-new-subtask-add-button {
+    background: var(--font-title-color);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: auto;
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    letter-spacing: inherit;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    background: transparent;
+    color: var(--font-title-color);
+    border: solid 1px var(--font-title-color);
+}

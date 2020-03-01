@@ -1,0 +1,66 @@
+.editable-title-div {
+  border: solid 1px transparent;
+  box-sizing: border-box;
+}
+.editable-title-div:hover {
+  border: solid 1px var(--font-title-color);
+}
+
+.edit-todo-editable-input {
+  font-size: 1em;
+  font-family: inherit;
+  border: solid 1px transparent;
+  background: transparent;
+  letter-spacing: inherit;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 0.1em 0;
+  outline: none;
+  width: 100%;
+  color: var(--font-title-color);
+  transition: all 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  text-align: inherit;
+  
+  display: none;
+}
+
+.edit-todo-editable-input:hover {
+  border: solid 1px var(--font-title-color);
+}
+
+.edit-todo-editable-input:focus {
+  border: solid 1px var(--font-title-color);
+  background-color: white;
+  color: black;
+  padding: 0.1em 0.5em;
+}
+
+.edit-todo-editable-input:focus + .editable-title-div {
+  visibility: hidden;
+}
+
+.edit-todo-editable-input:focus + .edit-todo-editable-input-button-container {
+  opacity: 1;
+}
+
+.edit-todo-editable-input-button-container {
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+  bottom: -1.75rem;
+  z-index: 5;
+}
+
+.edit-todo-editable-input-button {
+  border: none;
+  background: transparent;
+  font-size: 1.4rem !important;
+  padding: 0;
+  outline: none;
+  z-index: 1;
+  margin-right: 0.1rem;
+}

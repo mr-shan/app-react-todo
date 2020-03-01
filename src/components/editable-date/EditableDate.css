@@ -1,0 +1,54 @@
+.editable-date-custom-input {
+  font-size: 1rem;
+  font-family: inherit;
+  border: solid 1px transparent;
+  background: transparent;
+  letter-spacing: inherit;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 0.1rem 0;
+  outline: none;
+  width: 100%;
+  color: var(--font-title-color);
+  transition: all 0.4s;
+  z-index: 3;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.editable-date-custom-input:hover {
+  border: solid 1px var(--font-title-color);
+}
+
+.editable-date-custom-input:focus {
+  border: solid 1px var(--font-title-color);
+  background-color: white;
+  color: black;
+  padding: 0.1rem 0.5rem;
+}
+
+.editable-date-container {
+  position: relative;
+  display: inline-block;
+}
+
+.editable-date-container-focused {
+  z-index: 5;
+}
+
+.editable-date-date-picker-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.editable-date-date-picker-wrapper .react-datepicker__input-container input {
+    z-index: 0;
+    border: none;
+    color: transparent;
+    outline: none;
+    background: transparent;
+    width: 0;
+    height: 0;
+}

@@ -1,0 +1,71 @@
+.todo-list-item-container {
+  display: flex;
+  border-radius: 1em;
+  padding: 0.5em;
+  position: relative;
+}
+/* 
+.todo-list-item-container:hover + .test {
+  opacity: 1;
+} */
+
+.todo-list-item-container input {
+  align-self: center;
+  height: 2em;
+  width: 2em;
+}
+
+.todo-tab-item-data {
+  position: relative;
+  width: 100%;
+  text-align: start;
+  margin-left: 1em;
+}
+
+.todo-tab-item-data h3,
+p {
+  padding: 0.25em;
+  margin: 0;
+}
+
+.todo-tab-item-data h3 {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.todo-tab-item-data h3:hover {
+  filter: brightness(0.8);
+  filter: drop-shadow(0px 0px 1px var(--font-title-color));
+}
+
+.trash-img {
+  height: 1.5em;
+  width: 1.75em;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.1s;
+  margin-right: 0.5em;
+}
+
+.trash-img:hover {
+  transform: scale(1.1);
+}
+
+.todo-list-item-loader-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  border-radius: 0.5em;
+}
+
+.todo-list-item-loader-wrapper img {
+  position: absolute;
+  height: 2em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

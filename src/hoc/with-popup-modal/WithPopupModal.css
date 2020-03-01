@@ -1,0 +1,91 @@
+.with-popup-modal-backdrop {
+  width: 100vw;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: black;
+  opacity: 0.7;
+}
+
+.with-popup-modal-backdrop-transition-enter-active {
+  opacity: 0.7;
+  animation: backdrop-enter 0.3s linear forwards;
+}
+
+.with-popup-modal-backdrop-transition-exit-active {
+  opacity: 0;
+  animation: backdrop-exit 0.3s linear forwards;
+}
+
+.with-popup-modal-transition-enter-active {
+  z-index: 15;
+  animation: modal-in 0.3s ease-out forwards;
+}
+
+.with-popup-modal-transition-exit-active {
+  z-index: 15;
+  animation: modal-out 0.3s ease-in forwards;
+}
+
+.with-popup-modal-container {
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 10%;
+}
+
+@keyframes backdrop-enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@keyframes backdrop-exit {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes modal-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modal-out {
+  0% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .with-popup-modal-container {
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    overflow: scroll;
+  }
+}
